@@ -1,0 +1,286 @@
+.frame{
+    display:flex; 
+}
+
+.leftwebhead{
+    font-size:20px;
+    display:auto;
+    font-weight:bold;
+    align-content: center;
+}
+
+.web-menu{
+    display:flex;
+    flex:auto;
+    justify-content: flex-end;
+    font-size:20px;
+}       
+.item{
+    font-size:20px;
+    flex:none;
+    width:60px;
+    margin-right:20px;
+    text-align:center;
+}
+.item1{
+    display:flex;
+    font-size:20px;
+    flex:auto;
+    width:60px;
+    margin:0 auto;
+}
+.mobile-menu{
+    
+    display:none;
+}
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap:20px;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.list11{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin: 0 auto;
+}
+
+.list12{
+    display:none;
+}
+.list13{
+    display:none;
+}
+.list-1{
+    display: none;
+    
+}
+.list-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap:20px;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.welcome{
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    height:250px;
+    background-color: lightblue; 
+}
+.text{
+    font-size:40px;
+    font-weight:bold;  
+}
+
+.promotion{
+    display:flex;
+    flex:1;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: lightblue;
+    align-items: center; 
+    height:50px;
+}
+.promotion img{
+    width: 80px;
+    height: 50px;
+}
+.promotion1{
+    display:flex;
+    flex:1;
+    margin:10px;
+    background-color: lightblue;
+    align-items: center; 
+    height:50px;
+}
+.promotion1 img{
+    width: 80px;
+    height: 50px;
+}
+.title1{
+    display:block;
+    justify-content:center;
+    background-color: black;
+    color:red; 
+    background-repeat: no-repeat;
+    background-size:600px;
+    background-position: center;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.title2{
+    display:block;
+    justify-content:center;
+    background-color: black;
+    color:red;
+    background-repeat: no-repeat;
+    background-size:600px;
+    background-position: center;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.title3{
+    display:block;
+    justify-content:center;
+    background-color: black;
+    color:red;
+    background-image:url("https://images.saymedia-content.com/.image/t_share/MTc0MDcyMTY0MDU4NjcwNjU4/german-shepherd-height-and-weight.jpg");  
+    background-repeat: no-repeat;
+    background-size:600px;
+    background-position: center;
+}
+.background1{
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    background-color:rgba(204, 203, 29, 0.5);
+    padding:30px;
+    margin-top:167px;
+    
+}
+.background2{
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    background-color:rgba(204, 203, 29, 0.5);
+    padding:30px;
+    margin-top:150px;
+    
+}
+.moblie{
+    display:none;
+}
+
+img{
+    float: right;
+}
+.side {
+    position:fixed;
+    height:100%;
+    width:50%;
+    left:50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+@media(max-width:1250px){
+    .list{
+        flex-wrap:wrap;
+    }
+    .promotion{
+        flex:auto;
+        margin:10px;
+        width:45%;
+    }
+    .promotion1{
+        flex:auto;
+        margin:10px;
+        width:45%;
+    }
+    
+    .title2{
+        
+        margin:10px;
+        
+    }
+    
+    
+    .list-1{
+        display:flex;
+        flex:auto;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        width: 100%; 
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .list{
+        display:none
+    }
+    .list12{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 5px;
+        row-gap:15px;
+        width: 100%; 
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .list13{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap:5px;
+        row-gap:15px;
+        width: 100%; 
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .list-2{
+        display:none;
+    }
+    .side1{
+        display:none;
+    }
+}
+
+
+
+@media(max-width:600px){
+    
+    .web-menu{
+        display:none;
+    }
+    .mobile-menu{
+        display:flex;
+        flex:auto;
+        justify-content: flex-end;
+    } 
+    .promotion{
+        flex:auto;
+        width:90%;
+    }
+    .promotion1{
+        flex:auto;
+        width:90%;
+    }
+    
+    .list12{
+        grid-template-columns:1fr;
+    }
+    .list13{
+        grid-template-columns:1fr;
+    }
+    .side1{
+        display:block;
+    }
+    
+}
+@media(max-width:400px){
+    .text{
+        font-size: 30px;
+    }
+    
+}
+
+@media(max-width:360px){
+    .text{
+        font-size: 30px;
+    }
+}
