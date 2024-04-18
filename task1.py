@@ -37,5 +37,6 @@ with open("spot.csv","w",newline="",encoding="utf-8") as file:
     merge_result=[[station]+attraction for station, attraction in merge_dict.items()]
 with open("mrt.csv","w",newline="",encoding="utf-8") as file:
     data2=csv.writer(file)
-    for n in merge_result:
-        data2.writerow(n)
+    for place,attraction in merge_dict.items():
+        data2.writerow([place]+attraction)
+print(merge_dict)
