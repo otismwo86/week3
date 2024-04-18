@@ -172,11 +172,11 @@
                 return response.json();
                 }).then(function(data){
                     let test=data.data.results
-                        for (let i=4;i<14;i++){
+                        for (let i=3;i<13;i++){
                             let pro=test[i]; 
                             let title1=pro.stitle;
                             let address=pro.filelist;
-                            let img1=address.match(/.*?(?=jpg)/i)+"jpg";
+                            let img1=address.replace(/jpg.*$/i, "jpg");
                             let promotionelements=document.querySelectorAll('.background1');
                                 for (let j=0;j<promotionelements.length; j++){
                                     let promotionelement=promotionelements[j];
@@ -189,35 +189,35 @@
                                     }
                                 }
                                 }
-                        for (let i=4;i<14;i++){
+                        for (let i=3;i<13;i++){
                             let pro=test[i]; 
                             let title1=pro.stitle;
                             let address=pro.filelist;
-                            let img1=address.match(/.*?(?=jpg)/i)+"jpg";
+                            let img1=address.replace(/jpg.*$/i, "jpg");
                             let promotionelements=document.querySelectorAll('.title2');
-                            for (let j = 0; j < promotionelements.length; j++) {
-                                let promotionelement = promotionelements[j];
+                            for (let j=0;j<promotionelements.length; j++) {
+                                let promotionelement=promotionelements[j];
                                 if (!promotionelement.style.backgroundImage) {
-                                    promotionelement.style.backgroundImage = `url('${img1}')`;
+                                    promotionelement.style.backgroundImage=`url('${img1}')`;
                                     break;
                                 }
                             }
                             }
-                        for (let i=4;i<14;i++){
+                        for (let i=3;i<13;i++){
                             let pro=test[i]; 
                             let title1=pro.stitle;
                             let address=pro.filelist;
-                            let img1=address.match(/.*?(?=jpg)/i)+"jpg";
+                            let img1=address.replace(/jpg.*$/i, "jpg");
                             let promotionelements=document.querySelectorAll('.title1');
-                            for (let j = 0; j < promotionelements.length; j++) {
-                                let promotionelement = promotionelements[j];
+                            for (let j=0;j<promotionelements.length;j++) {
+                                let promotionelement=promotionelements[j];
                                 if (!promotionelement.style.backgroundImage) {
-                                    promotionelement.style.backgroundImage = `url('${img1}')`;
+                                    promotionelement.style.backgroundImage=`url('${img1}')`;
                                     break;
                                 }
-                                                    }
                             }
-                        for (let i=4;i<14;i++){
+                            }
+                        for (let i=3;i<13;i++){
                             let pro=test[i]; 
                             let title1=pro.stitle;
                             let promotionelements=document.querySelectorAll('.background2');
@@ -235,7 +235,7 @@
                         for (let i=0;i<3;i++) {
                             let pro=test[i]; 
                             let address=pro.filelist;
-                            let img1=address.match(/.*?(?=jpg)/i)+"jpg";
+                            let img1=address.replace(/jpg.*$/i, "jpg");
                             let title1=pro.stitle;
                             let promotionelements=document.querySelectorAll('.promotion');
                                 for (let j=0;j<promotionelements.length; j++){
@@ -253,7 +253,7 @@
                                     }
                                 }
                     let promotionelements1=document.querySelectorAll('.promotion1');
-                        for (let j=0;j<promotionelements1.length; j++){
+                        for (let j=0;j<promotionelements1.length;j++){
                             let promotionelement=promotionelements1[j];
                             let existingImg=promotionelement.querySelector('img');
                             let existingp=promotionelement.querySelector('p');
