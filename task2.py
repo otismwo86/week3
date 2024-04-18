@@ -43,7 +43,7 @@ while n<3:
     n+=1
 
 
-with open("article.csv", "w", newline="", encoding="utf-8") as file:
+with open("article.csv","w",newline="",encoding="utf-8") as file:
     data2=csv.writer(file)
     data2.writerows(rows)
 
