@@ -67,6 +67,7 @@
     row-gap:20px;
     width: 100%; 
     max-width: 1200px;
+    margin-top:20px;
     margin: 0 auto;
 }
 .welcome{
@@ -111,6 +112,7 @@
     justify-content:center;
     background-color: black;
     color:red; 
+    height:250px;
     background-repeat: no-repeat;
     background-size:600px;
     background-position: center;
@@ -126,6 +128,7 @@
     color:red;
     background-repeat: no-repeat;
     background-size:600px;
+    height:250px;
     background-position: center;
     overflow:hidden;
     white-space: nowrap;
@@ -147,7 +150,10 @@
     justify-content:center;
     align-items:center; 
     background-color:rgba(204, 203, 29, 0.5);
-    padding:30px;
+    padding-top: 15px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+    padding-left: 80px;
     margin-top:167px;
     
 }
@@ -183,23 +189,17 @@ body{
     .list{
         flex-wrap:wrap;
     }
-    .promotion{
-        flex:auto;
-        margin:10px;
-        width:45%;
-    }
+    
     .promotion1{
         flex:auto;
-        margin:10px;
+        
         width:45%;
     }
     
     .title2{
-        
         margin:10px;
-        
+        margin-bottom:20px;
     }
-    
     
     .list-1{
         display:flex;
@@ -207,8 +207,7 @@ body{
         flex-wrap:wrap;
         justify-content:center;
         align-items:center;
-        width: 100%; 
-        max-width: 1200px;
+        width: 90%; 
         margin: 0 auto;
     }
     .list{
@@ -217,24 +216,21 @@ body{
     .list12{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 5px;
-        row-gap:15px;
-        width: 100%; 
+        width: 90%; 
         max-width: 1200px;
         margin: 0 auto;
     }
     .list13{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap:5px;
-        row-gap:15px;
-        width: 100%; 
+        width: 90%; 
         max-width: 1200px;
         margin: 0 auto;
     }
     .list-2{
         display:none;
     }
+    
     .side1{
         display:none;
     }
@@ -252,20 +248,33 @@ body{
         flex:auto;
         justify-content: flex-end;
     } 
-    .promotion{
-        flex:auto;
-        width:90%;
-    }
+    
     .promotion1{
         flex:auto;
         width:90%;
+        margin:0px;
+        
+        margin-bottom:10px;
+    }
+    .title2{   
+        margin:0px; 
     }
     
     .list12{
         grid-template-columns:1fr;
+        max-width:90%;
+        row-gap:10px;
+        margin-bottom:10px;
+    }
+    .list-1{
+        grid-template-columns:1fr;
+        max-width:90%;
+        margin-top:10px;
     }
     .list13{
         grid-template-columns:1fr;
+        max-width:90%;
+        row-gap:10px;
     }
     .side1{
         display:block;
