@@ -44,6 +44,6 @@ while n<3:
 
 
 with open("article.csv", "w", newline="", encoding="utf-8") as file:
-    data2 = csv.writer(file)
+    data2=csv.writer(file)
     data2.writerows(rows)
 
